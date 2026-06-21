@@ -72,6 +72,7 @@ temp/
 *.pem
 
 docs/_build/
+docs/build/
 
 .pytest_cache/
 .mypy_cache/
