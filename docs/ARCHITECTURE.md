@@ -11,7 +11,7 @@
 ## Connections
 
 - Fedora PC ↔ Raspberry Pi: direct Ethernet (SSH, internet sharing) for development  
-  (see `docs/networking-pi-fedora.md` for details)
+  (see [Networking setup (Pi ↔ Fedora)](docs/networking-pi-fedora.md) for details)
 
 ## ROS2 (planned)
 
