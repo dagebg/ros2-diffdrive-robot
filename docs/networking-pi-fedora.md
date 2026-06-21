@@ -1,12 +1,12 @@
 # Development Networking Setup (Raspberry Pi over Ethernet)
 
-During development, the Raspberry Pi is connected directly to a Fedora laptop via Ethernet.  
+During development, the Raspberry Pi is connected directly to a Fedora PC via Ethernet.  
 The Fedora laptop shares its Wi‑Fi internet connection with the Pi and acts as a simple NAT gateway. [web:39][web:41][web:46][web:72]
 
 ## Topology
 
 ```text
-[Internet] ⇄ [Wi‑Fi router] ⇄ [Fedora laptop]
+[Internet] ⇄ [Wi‑Fi router] ⇄ [Fedora PC]
                                    │
                                    │  eno1 (10.42.0.1/24)
                                    │
