@@ -56,7 +56,7 @@ network:
       nameservers:
         addresses: [8.8.8.8, 1.1.1.1]
       access-points:
-        "FRITZ!Box 7362 SL":
+        "<redacted>":
           password: "<redacted>"
 ```
 
