@@ -13,6 +13,7 @@ extensions = [
     'sphinx.ext.autodoc',       # Python docstring extraction
     'sphinx.ext.viewcode',      # adds "view source" links
     'sphinx.ext.napoleon',      # Google/NumPy style docstrings
+    #'myst_parser',              # Markdown support
 ]
 
 templates_path = ['_templates']
@@ -26,7 +27,7 @@ breathe_projects = {
 breathe_default_project = 'ros2-diffdrive-robot'
 
 # -- HTML output -------------------------------------------------------------
-html_theme = 'furo'             # modern theme, replaces alabaster
+html_theme = 'furo'             
 html_static_path = ['_static']
 
 html_title = 'ROS2 DiffDrive Robot'
