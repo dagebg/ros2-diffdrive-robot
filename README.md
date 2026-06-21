@@ -22,7 +22,7 @@
 ros2-diffdrive-robot/
 ├── ros2_ws/        ROS2 workspace (packages: diff drive, navigation, etc.)
 ├── firmware/       ESP32 firmware (motor controller, IMU bridge)
-└── docs/           Architecture notes + Sphinx documentation (WIP)
+└── docs/           Architecture notes + Sphinx documentation 
 ```
 
 ## Development setup
