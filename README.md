@@ -4,6 +4,8 @@
 > using ROS2 on a Raspberry Pi 4, an ESP32 for real-time motor/sensor control,
 > and a fully 3D-printed chassis.
 
+📚 **[Full documentation → dagebg.github.io/ros2-diffdrive-robot](https://dagebg.github.io/ros2-diffdrive-robot/)**
+
 ## Hardware
 
 | Component | Role |
@@ -22,7 +24,7 @@
 ros2-diffdrive-robot/
 ├── ros2_ws/        ROS2 workspace (packages: diff drive, navigation, etc.)
 ├── firmware/       ESP32 firmware (motor controller, IMU bridge)
-└── docs/           Architecture notes + Sphinx documentation 
+└── docs/           Architecture notes + Sphinx documentation
 ```
 
 ## Development setup
@@ -33,10 +35,10 @@ ros2-diffdrive-robot/
 
 ## Documentation
 
+- 📖 [Full Sphinx docs](https://dagebg.github.io/ros2-diffdrive-robot/)
 - [Architecture overview](docs/ARCHITECTURE.md)
 - [Networking setup (Pi ↔ Fedora)](docs/networking-pi-fedora.md)
-- Full Sphinx docs: *coming soon*
 
 ## Status
 
-🚧 Early WIP — project structure and documentation setup in progress.
+🚧 Early WIP — ROS2 workspace and firmware development in progress.
