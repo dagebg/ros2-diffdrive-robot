@@ -1,7 +1,7 @@
 # Development Networking Setup (Raspberry Pi over Ethernet)
 
 During development, the Raspberry Pi is connected directly to a Fedora PC via Ethernet.  
-The Fedora laptop shares its Wi‑Fi internet connection with the Pi and acts as a simple NAT gateway. [web:39][web:41][web:46][web:72]
+The Fedora PC shares its Wi‑Fi internet connection with the Pi and acts as a simple NAT gateway. [web:39][web:41][web:46][web:72]
 
 ## Topology
 
@@ -15,7 +15,7 @@ The Fedora laptop shares its Wi‑Fi internet connection with the Pi and acts as
                                  [Raspberry Pi]
 ```
 
-- Fedora laptop:
+- Fedora PC:
   - Wi‑Fi interface: `wlp11s0` (internet)
   - Ethernet interface: `eno1` (to Pi)
 - Raspberry Pi:
@@ -27,7 +27,7 @@ The Fedora laptop shares its Wi‑Fi internet connection with the Pi and acts as
 ## Raspberry Pi configuration (netplan + systemd‑resolved)
 
 The Pi uses `systemd-networkd` via netplan and `systemd-resolved` for DNS.  
-Static addressing and routing on `eth0` make the Pi always reachable at `10.42.0.100`, with the Fedora laptop `10.42.0.1` as its default gateway. [web:39][web:41][web:46][web:74]
+Static addressing and routing on `eth0` make the Pi always reachable at `10.42.0.100`, with the Fedora PC `10.42.0.1` as its default gateway. [web:39][web:41][web:46][web:74]
 
 Edit the netplan file (e.g. `/etc/netplan/50-cloud-init.yaml`):
 
@@ -88,9 +88,9 @@ Expected on the Pi:
 
 ---
 
-## Fedora laptop configuration
+## Fedora PC configuration
 
-The Fedora laptop has a static IP on `eno1` for the Pi network, enables IPv4 forwarding, and uses a small script + systemd unit to set up NAT from `eno1` to `wlp11s0`. [web:72][web:74][web:78]
+The Fedora PC has a static IP on `eno1` for the Pi network, enables IPv4 forwarding, and uses a small script + systemd unit to set up NAT from `eno1` to `wlp11s0`. [web:72][web:74][web:78]
 
 ### 1. Static IP on `eno1`
 
