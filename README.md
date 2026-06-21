@@ -9,7 +9,6 @@ ros2-diffdrive-robot/
 ├── README.md
 ├── docs/
 │   ├── ARCHITECTURE.md
-│   ├── hardware-software.md
 │   └── networking-pi-fedora.md
 └── source/                  
 ```
