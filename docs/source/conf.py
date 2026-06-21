@@ -1,28 +1,32 @@
 # Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
 project = 'ROS2 DiffDrive Robot'
-copyright = '2026, dagebg'
-author = 'dagebg'
+copyright = '2026, dagebg, David Geßner'
+author = 'David Geßner'
 release = '0.1'
 
 # -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
-extensions = []
+extensions = [
+    'breathe',                  # C++ API docs via Doxygen XML
+    'sphinx.ext.autodoc',       # Python docstring extraction
+    'sphinx.ext.viewcode',      # adds "view source" links
+    'sphinx.ext.napoleon',      # Google/NumPy style docstrings
+]
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# -- Breathe configuration ---------------------------------------------------
+# Points to where Doxygen will output its XML (we create this later)
+breathe_projects = {
+    'ros2-diffdrive-robot': '../doxygen_output/xml'
+}
+breathe_default_project = 'ros2-diffdrive-robot'
 
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
+# -- HTML output -------------------------------------------------------------
+html_theme = 'furo'             # modern theme, replaces alabaster
 html_static_path = ['_static']
+
+html_title = 'ROS2 DiffDrive Robot'
