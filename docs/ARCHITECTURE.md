@@ -3,7 +3,7 @@
 ## Components
 
 - Dev PCs: Fedora Linux desktop and MacBook (used for development and SSH)
-- Robot: Raspberry Pi 4 Model B 4GB running Ubuntu Server 24.04 and ROS2
+- Robot: Raspberry Pi 4 Model B 4GB running Ubuntu Server 24.04 noble and ROS2 jazzy
 - Microcontroller: ESP32 for motor and sensor control
 - Hardware: TB6612FNG motor driver, 2× N20 motors with encoders, MPU-9250 IMU, Li-Ion batteries
 - Mechanics: 3D-printed robot chassis, wheels, and support hardware
