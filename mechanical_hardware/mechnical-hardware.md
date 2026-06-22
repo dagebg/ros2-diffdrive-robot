@@ -29,11 +29,6 @@ The following CAD models were sourced from GrabCAD for reference and assembly vi
 | `TB6612FNG_motor_driver.step` | TB6612FNG dual motor driver breakout board | GrabCAD Library — [TB6612FNG](https://grabcad.com/library/tb6612fng-2) |
 | `Battery_Li-ion.stp` | 7.4 V 2S 18650 Li‑Ion battery pack (2000 mAh) | GrabCAD Library — [2S 7.4V 2000mAh 18650 Battery Pack](https://grabcad.com/library/2s-7-4v-2000mah-18650-battery-pack-1) |
 | `Pi_cooler.step` | Heatsink / cooling assembly for Raspberry Pi 4 | GrabCAD Library — [Raspberry Pi 4 Cooler](https://grabcad.com/library/raspberry-pi-4-cooler-1) |
-
-### Missing Models
-
-| Component | Reason |
-|-----------|---------|
-| HW-140 Buck Converter | No suitable CAD model found on GrabCAD — placeholder geometry to be modelled manually if needed for assembly |
+| HW-140 Buck Converter | No suitable CAD model found on GrabCAD — placeholder geometry to be modelled manually if needed for assembly ||
 
 > **Note:** Third-party models in this folder are used solely for mechanical reference and assembly planning. They are not original designs of this project.
