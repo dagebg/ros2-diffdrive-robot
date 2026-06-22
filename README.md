@@ -7,17 +7,10 @@
 **[Full documentation → dagebg.github.io/ros2-diffdrive-robot](https://dagebg.github.io/ros2-diffdrive-robot/)**
 
 ## Goals
-
-This project has two intertwined goals:
-
-1. **Learn ROS2 hands-on** — build a real, working robot rather than following tutorials on a simulated one. Every concept (nodes, topics, tf2, ros2_control, nav2) gets applied to actual hardware.
-2. **Build something portfolio-worthy** — a clean, well-documented GitHub project that demonstrates embedded systems, sensor fusion, control theory, and ROS2 integration in one place.
-
 The target end state is a two-wheeled self-balancing robot that:
-- Balances itself using IMU feedback and a PID/LQR controller running on the ESP32
-- Accepts velocity commands via ROS2 `/cmd_vel` from the Raspberry Pi
+- Balances itself using IMU feedback and a PID controller running on the ESP32
+- Accepts commands via ROS2 from the Raspberry Pi
 - Publishes odometry and IMU data back into the ROS2 ecosystem
-- Can be visualised and teleoperated through RViz
 
 ## Current Direction
 
