@@ -36,7 +36,7 @@ ros2-diffdrive-robot/
 
 ## Documentation
 
-- 📖 [Full Sphinx docs](https://dagebg.github.io/ros2-diffdrive-robot/)
+- [Full Sphinx docs](https://dagebg.github.io/ros2-diffdrive-robot/)
 - [Architecture overview](docs/ARCHITECTURE.md)
 - [Networking setup (Pi ↔ Fedora)](docs/networking-pi-fedora.md)
 
