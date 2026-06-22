@@ -6,6 +6,29 @@
 
 **[Full documentation → dagebg.github.io/ros2-diffdrive-robot](https://dagebg.github.io/ros2-diffdrive-robot/)**
 
+## Goals
+
+This project has two intertwined goals:
+
+1. **Learn ROS2 hands-on** — build a real, working robot rather than following tutorials on a simulated one. Every concept (nodes, topics, tf2, ros2_control, nav2) gets applied to actual hardware.
+2. **Build something portfolio-worthy** — a clean, well-documented GitHub project that demonstrates embedded systems, sensor fusion, control theory, and ROS2 integration in one place.
+
+The target end state is a two-wheeled self-balancing robot that:
+- Balances itself using IMU feedback and a PID/LQR controller running on the ESP32
+- Accepts velocity commands via ROS2 `/cmd_vel` from the Raspberry Pi
+- Publishes odometry and IMU data back into the ROS2 ecosystem
+- Can be visualised and teleoperated through RViz
+
+## Current Direction
+
+The robot started as a classic 4-wheel differential-drive base and is evolving toward a **two-wheeled self-balancing (inverted pendulum) platform**. This means:
+
+- The ESP32 runs a fast real-time balance loop (IMU → filter → PID → motor commands)
+- ROS2 on the Pi acts as the high-level layer, sending velocity targets without caring about the internal balance loop
+- The chassis is being designed from scratch in Autodesk Fusion and 3D-printed on a BambuLab P1S
+
+The self-balancing route is harder and slower to get running than a stable 4-wheel base, but it covers more interesting engineering ground: control theory, sensor fusion, real-time embedded constraints, and ROS2 hardware interfacing all in one project.
+
 ## Hardware
 
 | Component | Role |
@@ -16,7 +39,7 @@
 | TB6612FNG dual motor driver | Motor direction + PWM speed control |
 | MPU-9250 9-DOF IMU | Accelerometer, gyroscope, magnetometer |
 | 7.4V 2000mAh Li-Ion 2S | Main power source |
-| 2x HW-140 DC-DC Buck Boost Converter | power converter |
+| 2x HW-140 DC-DC Buck Boost Converter | Power converter |
 | 3D-printed chassis + wheels | Custom mechanical platform |
 
 ## Repository layout
