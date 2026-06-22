@@ -15,7 +15,8 @@
 | 2× N20 6V 100 RPM + Hall encoders | Drive wheels + wheel odometry |
 | TB6612FNG dual motor driver | Motor direction + PWM speed control |
 | MPU-9250 9-DOF IMU | Accelerometer, gyroscope, magnetometer |
-| 2× 7.4V 2000mAh Li-Ion 2S | Main power supply |
+| 7.4V 2000mAh Li-Ion 2S | Main power source |
+| 2x HW-140 DC-DC Buck Boost Converter | power converter |
 | 3D-printed chassis + wheels | Custom mechanical platform |
 
 ## Repository layout
