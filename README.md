@@ -9,18 +9,9 @@
 ## Goals
 The target end state is a two-wheeled self-balancing robot that:
 - Balances itself using IMU feedback and a PID controller running on the ESP32
-- Accepts commands via ROS2 from the Raspberry Pi
-- Publishes odometry and IMU data back into the ROS2 ecosystem
-
-## Current Direction
-
-The robot started as a classic 4-wheel differential-drive base and is evolving toward a **two-wheeled self-balancing (inverted pendulum) platform**. This means:
-
 - The ESP32 runs a fast real-time balance loop (IMU → filter → PID → motor commands)
 - ROS2 on the Pi acts as the high-level layer, sending velocity targets without caring about the internal balance loop
 - The chassis is being designed from scratch in Autodesk Fusion and 3D-printed on a BambuLab P1S
-
-The self-balancing route is harder and slower to get running than a stable 4-wheel base, but it covers more interesting engineering ground: control theory, sensor fusion, real-time embedded constraints, and ROS2 hardware interfacing all in one project.
 
 ## Hardware
 
