@@ -1,0 +1,35 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "997b8fea-6110-49db-b0d2-1e961e621252")
+	(paper "A4")
+	(lib_symbols)
+	(bus
+		(pts
+			(xy 64.77 146.05) (xy 255.27 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27580477-ef90-439f-9fff-35e708929991")
+	)
+	(bus
+		(pts
+			(xy 64.77 34.29) (xy 255.27 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(uuid "f212fe12-8ec4-4e6c-b81e-61621332bcb1")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
