@@ -11,7 +11,7 @@ The target end state is a two-wheeled self-balancing robot that:
 - Balances itself using IMU feedback and a PID controller running on the ESP32
 - The ESP32 runs a fast real-time balance loop (IMU → filter → PID → motor commands)
 - ROS2 on the Pi acts as the high-level layer, sending velocity targets without caring about the internal balance loop
-- The chassis is being designed from scratch in Autodesk Fusion and 3D-printed on a BambuLab P1S
+- The chassis is being designed from scratch in Autodesk Fusion and Siemens NX and 3D-printed on a BambuLab P1S
 
 ## Hardware
 
