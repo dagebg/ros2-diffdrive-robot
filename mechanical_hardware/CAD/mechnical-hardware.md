@@ -1,6 +1,6 @@
 # Mechanical Hardware
 
-This document tracks the mechanical design of the robot chassis and related 3D‑printed parts that I design and print myself, primarily using Autodesk Fusion 360 and my BambuLab P1S printer.
+This document tracks the mechanical design of the robot chassis and related 3D‑printed parts that I design and print myself, primarily using Autodesk Fusion 360 and Siemens NX and my BambuLab P1S printer.
 
 ---
 
