@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-> A personal learning project — building a differential-drive robot from scratch
+> A personal learning project — building a self balancing differential-drive robot from scratch
 > using ROS2 on a Raspberry Pi 4, an ESP32 for real-time motor/sensor control,
 > and a fully 3D-printed chassis. All while working on my masters thesis, so updates might come irregularly.
 
@@ -74,7 +74,7 @@ Files:
 ## Repository layout
 
 ```text
-ros2-diffdrive-robot/
+ros2-self-balancing-robot/
 ├── ros2_ws/              ROS2 workspace (packages: diff drive, navigation, etc.)
 ├── firmware/             ESP32 firmware (motor controller, IMU bridge)
 ├── mechanical_hardware   CAD design & wiring schematics     
@@ -83,9 +83,8 @@ ros2-diffdrive-robot/
 
 ## Documentation
 
-- [Full Sphinx docs](https://dagebg.github.io/ros2-diffdrive-robot/)
+- [Full Sphinx docs](https://dagebg.github.io/ros2-self-balancing-robot/)
 - [Architecture overview](docs/ARCHITECTURE.md)
-- [Networking setup (Pi ↔ Fedora)](docs/networking-pi-fedora.md)
 
 ## Status
 
