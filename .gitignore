@@ -82,3 +82,5 @@ htmlcov/
 mechanical_hardware/schematics/.history/
 
 SECRETS.h
+
+.history/
