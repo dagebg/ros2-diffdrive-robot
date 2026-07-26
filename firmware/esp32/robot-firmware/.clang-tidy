@@ -11,5 +11,5 @@ Checks: >
   -bugprone-throwing-static-initialization,
   -readability-avoid-const-params-in-decls
 WarningsAsErrors: ''
-HeaderFilterRegex: '(^|/)(src|lib)/.*\.(h|hpp|cpp)$'
+HeaderFilterRegex: '.*robot-firmware/(src|lib)/.*\.(h|hpp|cpp)$'
 FormatStyle: file
