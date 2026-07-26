@@ -5,7 +5,7 @@
 
 > A personal learning project — building a differential-drive robot from scratch
 > using ROS2 on a Raspberry Pi 4, an ESP32 for real-time motor/sensor control,
-> and a fully 3D-printed chassis.
+> and a fully 3D-printed chassis. All while working on my masters thesis, so updates might come irregularly.
 
 **[Full documentation → dagebg.github.io/ros2-self-balancing-robot](https://dagebg.github.io/ros2-self-balancing-robot/)**
 
