@@ -34,7 +34,7 @@ void wifiDebugPrintln(const String &msg) {
 void wifiDebugLoop() {
   if (telnetServer.hasClient()) {
     if (telnetClient == 0 || !telnetClient.connected()) {
-      if (telnetClient) {
+      if (telnetClient != 0) {
         telnetClient.stop();
       }
       telnetClient = telnetServer.available();
