@@ -2,6 +2,7 @@
 ![ROS2](https://img.shields.io/badge/ROS2-Jazzy-blue?logo=ros)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![CI](https://github.com/dagebg/ros2-self-balancing-robot/actions/workflows/ci.yml/badge.svg)
 
 > A personal learning project — building a self balancing differential-drive robot from scratch
 > using ROS2 on a Raspberry Pi 4, an ESP32 for real-time motor/sensor control,
