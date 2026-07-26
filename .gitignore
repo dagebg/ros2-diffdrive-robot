@@ -80,3 +80,5 @@ htmlcov/
 
 .ipynb_checkpoints/
 mechanical_hardware/schematics/.history/
+
+SECRETS.h
