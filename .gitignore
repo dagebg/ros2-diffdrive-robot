@@ -74,7 +74,7 @@ docs/_build/
 docs/build/
 
 .pytest_cache/
-.mypy_cache/P
+.mypy_cache/
 .coverage
 htmlcov/
 
