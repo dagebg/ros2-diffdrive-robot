@@ -74,7 +74,7 @@ docs/_build/
 docs/build/
 
 .pytest_cache/
-.mypy_cache/
+.mypy_cache/P
 .coverage
 htmlcov/
 
@@ -82,3 +82,5 @@ htmlcov/
 mechanical_hardware/schematics/.history/
 
 SECRETS.h
+
+.history/
