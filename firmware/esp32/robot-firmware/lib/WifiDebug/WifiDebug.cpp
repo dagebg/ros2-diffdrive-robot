@@ -22,7 +22,7 @@ void wifiDebugBegin(const char* ssid, const char* password) {
 
 void wifiDebugPrint(const String &msg) {
   Serial.print(msg);
-  if (telnetClient != 0 && telnetClient.connected()) {
+  if (telnetClient != 0 && telnetClient.connected() != 0) {
     telnetClient.print(msg);
   }
 }
@@ -33,7 +33,7 @@ void wifiDebugPrintln(const String &msg) {
 
 void wifiDebugLoop() {
   if (telnetServer.hasClient()) {
-    if (telnetClient == 0 || !telnetClient.connected()) {
+    if (telnetClient == 0 || telnetClient.connected() == 0) {
       if (telnetClient != 0) {
         telnetClient.stop();
       }
