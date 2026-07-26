@@ -9,12 +9,12 @@ void scanI2C() {
     byte error = Wire.endTransmission();
     if (error == 0) {
       String line = "I2C device found at address 0x";
-      if (addr < 16) line += "0";
+      if (addr < 16) {line += "0";};
       line += String(addr, HEX);
       wifiDebugPrintln(line);
     } else if (error == 4) {
       String line = "Unknown error at address 0x";
-      if (addr < 16) line += "0";
+      if (addr < 16) {line += "0";};
       line += String(addr, HEX);
       wifiDebugPrintln(line);
     }
